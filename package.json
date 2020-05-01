@@ -7,13 +7,16 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec --timeout 60000 test/*test.js"
+    "test": "mocha -R spec --timeout 60000 test/*test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "debug": "^2.1.1",
     "request": "^2.55.0",
     "strong-soap": "^1.0.1",
-    "strong-globalize": "^2.6.2"
+    "strong-globalize": "^2.6.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "loopback": "^3.0.0",
@@ -24,5 +27,6 @@
     "type": "git",
     "url": "https://github.com/strongloop/loopback-connector-soap.git"
   },
-  "license": "SEE LICENSE IN LICENSE.md"
+  "license": "SEE LICENSE IN LICENSE.md",
+  "snyk": true
 }
