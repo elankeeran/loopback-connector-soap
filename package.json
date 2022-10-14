@@ -12,7 +12,7 @@
   "dependencies": {
     "debug": "^2.1.1",
     "request": "^2.55.0",
-    "strong-soap": "^1.0.1",
+    "strong-soap": "^3.0.0",
     "strong-globalize": "^2.6.2"
   },
   "devDependencies": {
